@@ -1,4 +1,4 @@
-from oslo.config import cfg
+from oslo_config import cfg
 
 default_opts = [
     cfg.StrOpt('foo', default='', help='foo value'),
