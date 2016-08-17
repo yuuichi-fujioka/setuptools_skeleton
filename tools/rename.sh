@@ -23,6 +23,9 @@ function is_toolsdir() {
 
 find . | while read line
 do
+    if [ -z "$line" ]; then
+        continue
+    fi
     if is_gitdir $line
     then
         continue
